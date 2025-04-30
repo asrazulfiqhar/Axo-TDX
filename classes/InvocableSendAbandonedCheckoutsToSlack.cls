@@ -68,7 +68,7 @@ global class InvocableSendAbandonedCheckoutsToSlack {
     @future(callout=true)
     public static void sendToSlackAsync(String message) {
         HttpRequest req = new HttpRequest();
-        req.setEndpoint('https://hooks.slack.com/services/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'); // 👈 replace with real webhook
+        req.setEndpoint(System.label.webhook); // 👈 
         req.setMethod('POST');
         req.setHeader('Content-Type', 'application/json');
 
