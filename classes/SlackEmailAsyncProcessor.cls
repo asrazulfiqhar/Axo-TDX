@@ -13,7 +13,7 @@ public class SlackEmailAsyncProcessor {
 
         Integer emailCount = 0;
         Integer failedCount = 0;
-        String discountCode = 'H0NEHHJH2QK9';
+        String discountCode = System.label.discountCode;
 
         List<Abandoned_Checkout__c> toUpdate = new List<Abandoned_Checkout__c>();
 
